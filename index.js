@@ -1,1 +1,3 @@
-console.log("Hello, world");
+// ! Arrays
+var allUsers = [];
+allUsers.push({ name: "Hammad", isActive: false });
