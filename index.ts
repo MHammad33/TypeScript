@@ -36,5 +36,22 @@
 // const data: (number | string)[] = [1, 2, 3, "4"];
 
 // ? Constant Assignments
-let seatAllotment: "aisle" | "middle" | "window";
-seatAllotment = "middle";
+// let seatAllotment: "aisle" | "middle" | "window";
+// seatAllotment = "middle";
+
+// ! Tuples
+// const user: (string | number)[] = ["Hammad", 11, "Ali"];
+// * Order of Array is important in some cases
+// const user: [string, number, boolean] = ["Hammad", 11, false];
+
+// * Example
+// const rgb: [number, number, number] = [255, 122, 33];
+
+// ? Type Aliases for tuples
+// type User = [number, string];
+// const user: User = [1, "Hammad"];
+
+// ? Something wrong about tuples
+type User = [number, string];
+const user: User = [1, "Hammad"];
+user.push(2); // Not following the above orders
