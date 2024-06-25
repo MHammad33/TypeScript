@@ -52,6 +52,23 @@
 // const user: User = [1, "Hammad"];
 
 // ? Something wrong about tuples
-type User = [number, string];
-const user: User = [1, "Hammad"];
-user.push(2); // Not following the above orders
+// type User = [number, string];
+// const user: User = [1, "Hammad"];
+// user.push(2); // Not following the above orders
+
+// ! Enum  -- Enumerations
+// ? Not a good code
+// const AISLE = 0;
+// const MIDDLE = 1;
+// const WINDOW = 2;
+
+// ? Good Code in enum form
+// const enum SeatChoice {
+// 	AISLE = 10,
+// 	MIDDLE,
+// 	WINDOW,
+// 	FOURTH,
+// }
+
+// const hcSeat: SeatChoice = SeatChoice.AISLE;
+// console.log(hcSeat);
