@@ -29,7 +29,7 @@
 // };
 // console.log(getVal(4));
 
-const heroes = ["hero1", "hero2", "hero3"];
+// const heroes = ["hero1", "hero2", "hero3"];
 // const heroes = [1, 2, 3];
 
 // ? Not a big difference
@@ -41,3 +41,13 @@ const heroes = ["hero1", "hero2", "hero3"];
 // heroes.map((hero): string => {
 // 	return `Hero is: ${hero}`;
 // });
+
+// ? void Type
+// function consoleError(errMsg: string): void {
+// 	console.log(errMsg);
+// }
+
+// ? never Type
+// function handleError(errMsg: string): never {
+// 	throw new Error(errMsg);
+// }
