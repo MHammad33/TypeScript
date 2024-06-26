@@ -57,3 +57,45 @@
 
 // 	return false;
 // }
+
+// ! instanceof
+// function logValue(x: Date | string) {
+// 	if (x instanceof Date) {
+// 		console.log(x.toUTCString());
+// 	} else {
+// 		console.log(x.toUpperCase());
+// 	}
+// }
+
+// ! Type Predicates
+type Fish = { swim: () => void };
+type Bird = { fly: () => void };
+
+// function isFish(pet: Fish | Bird) {
+// 	return (pet as Fish).swim !== undefined;
+// }
+
+// function getFood(pet: Fish | Bird) {
+// 	if (isFish(pet)) {
+// 		pet; // Type still not confirmed
+// 		return "Fish Food";
+// 	} else {
+// 		pet; // Type still not confirmed
+// 		return "Bird Food";
+// 	}
+// }
+
+// * Improving code
+// function isFish(pet: Fish | Bird): pet is Fish {
+// 	return (pet as Fish).swim !== undefined;
+// }
+
+// function getFood(pet: Fish | Bird) {
+// 	if (isFish(pet)) {
+// 		pet; // Type confirmed
+// 		return "Fish Food";
+// 	} else {
+// 		pet; // Type confirmed
+// 		return "Bird Food";
+// 	}
+// }
