@@ -68,8 +68,8 @@
 // }
 
 // ! Type Predicates
-type Fish = { swim: () => void };
-type Bird = { fly: () => void };
+// type Fish = { swim: () => void };
+// type Bird = { fly: () => void };
 
 // function isFish(pet: Fish | Bird) {
 // 	return (pet as Fish).swim !== undefined;
@@ -97,5 +97,47 @@ type Bird = { fly: () => void };
 // 	} else {
 // 		pet; // Type confirmed
 // 		return "Bird Food";
+// 	}
+// }
+
+// ! Discriminated Union and Exhaustiveness Checking
+// interface Circle {
+// 	kind: "circle";
+// 	radius: number;
+// }
+
+// interface Square {
+// 	kind: "square";
+// 	side: number;
+// }
+
+// interface Rectangle {
+// 	kind: "rectangle";
+// 	length: number;
+// 	width: number;
+// }
+
+// type Shape = Circle | Square | Rectangle;
+
+// function getTrueShape(shape: Shape) {
+// 	if (shape.kind === "circle") {
+// 		return Math.PI * shape.radius ** 2;
+// 	} else if (shape.kind === "square") {
+// 		return shape.side * shape.side;
+// 	}
+// }
+
+// ? Exhaustiveness Checking
+// function getArea(shape: Shape) {
+// 	switch (shape.kind) {
+// 		case "circle":
+// 			return Math.PI * shape.radius ** 2;
+// 		case "square":
+// 			return shape.side * shape.side;
+// 		case "rectangle":
+// 			return shape.length * shape.width;
+// 		default:
+// 			const _defaultForShape: never = shape;
+// 			return _defaultForShape;
 // 	}
 // }
