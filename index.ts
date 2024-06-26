@@ -24,14 +24,36 @@
 // }
 
 // * Example 3 -- Not all cases covers (length might be zero)
-function printAll(strs: string | string[] | null) {
-	if (strs) {
-		if (typeof strs === "object") {
-			for (const s of strs) {
-				console.log(s);
-			}
-		} else if (typeof strs === "string") {
-			console.log(strs);
-		}
-	}
-}
+// function printAll(strs: string | string[] | null) {
+// 	if (strs) {
+// 		if (typeof strs === "object") {
+// 			for (const s of strs) {
+// 				console.log(s);
+// 			}
+// 		} else if (typeof strs === "string") {
+// 			console.log(strs);
+// 		}
+// 	}
+// }
+
+// ! The in operator narrowing
+// interface User {
+// 	name: string;
+// 	email: string;
+// }
+
+// interface Admin {
+// 	name: string;
+// 	email: string;
+// 	isAdmin: boolean;
+// }
+
+// function isAdminAccount(account: User | Admin): boolean {
+// 	// return account.isAdmin; // error
+
+// 	if ("isAdmin" in account) {
+// 		return account.isAdmin;
+// 	}
+
+// 	return false;
+// }
